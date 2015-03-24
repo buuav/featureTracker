@@ -78,8 +78,8 @@ if __name__ == '__main__':
 
     while True:
         s, img2 = cap.read()
-        # img2 = cv2.resize(cv2.cvtColor(img2, cv2.COLOR_BGR2GRAY), (640, 480))
-        img2 = cv2.cvtColor(img2, cv2.COLOR_BGR2GRAY)
+        img2 = cv2.resize(cv2.cvtColor(img2, cv2.COLOR_BGR2GRAY), (640, 480))
+        # img2 = cv2.cvtColor(img2, cv2.COLOR_BGR2GRAY)
 
         kp2, desc2 = detector.detectAndCompute(img2, None)
         if desc2 is None:
