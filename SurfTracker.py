@@ -1,12 +1,12 @@
 __author__ = 'gauravhirlekar'
 
-FLANN_INDEX_KDTREE = 1
-
 
 def init_feature():
-    detector = cv2.SURF(500)
-    flann_params = dict(algorithm=FLANN_INDEX_KDTREE, trees=5)
-    matcher = cv2.FlannBasedMatcher(flann_params, {})
+    detector = cv2.SURF(500)    # 500 is the threshold Hessian value for the detector.
+    FLANN_INDEX_KDTREE = 1
+    index_params = dict(algorithm=FLANN_INDEX_KDTREE, trees=5)
+    search_params = dict(checks=100)     # Or pass empty dictionary
+    matcher = cv2.FlannBasedMatcher(index_params, search_params)
     return detector, matcher
 
 
@@ -29,6 +29,7 @@ def explore_match(win, img1, img2, kp_pairs, status=None, H=None):
 
     if status is None:
         status = np.ones(len(kp_pairs), np.bool_)
+
     p1 = np.int32([kpp[0].pt for kpp in kp_pairs])
     p2 = np.int32([kpp[1].pt for kpp in kp_pairs]) + (w1, 0)
 
