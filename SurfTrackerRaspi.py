@@ -10,53 +10,6 @@ def init_feature():
     return detector, matcher
 
 
-def explore_match(win, img1, img2, kp_pairs, status=None, H=None):
-    h1, w1 = img1.shape[:2]
-    h2, w2 = img2.shape[:2]
-    vis = np.zeros((max(h1, h2), w1 + w2), np.uint8)
-    vis[:h1, :w1] = img1
-    vis[:h2, w1:w1 + w2] = img2
-    vis = cv2.cvtColor(vis, cv2.COLOR_GRAY2BGR)
-
-    if len(kp_pairs) is 0:
-        cv2.imshow(win, vis)
-        return vis
-
-
-    if H is not None and len(status) > 10:
-        corners = np.float32([[0, 0], [w1, 0], [w1, h1], [0, h1]])
-        corners = np.int32(cv2.perspectiveTransform(corners.reshape(1, -1, 2), H).reshape(-1, 2) + (w1, 0))
-        cv2.polylines(vis, [corners], True, (0, 0, 255), thickness=2)
-        print cv2.perspectiveTransform(np.float32([w1/2, h1/2]).reshape(1, -1, 2), H).reshape(-1, 2)-np.float32(w1/2)
-
-    if status is None:
-        status = np.ones(len(kp_pairs), np.bool_)
-
-    p1 = np.int32([kpp[0].pt for kpp in kp_pairs])
-    p2 = np.int32([kpp[1].pt for kpp in kp_pairs]) + (w1, 0)
-
-    green = (0, 255, 0)
-    red = (0, 0, 255)
-
-    for (x1, y1), (x2, y2), inlier in zip(p1, p2, status):
-        if inlier:
-            col = green
-            cv2.circle(vis, (x1, y1), 2, col, -1)
-            cv2.circle(vis, (x2, y2), 2, col, -1)
-            cv2.line(vis, (x1, y1), (x2, y2), green)
-        else:
-            col = red
-            r = 2
-            thickness = 3
-            cv2.line(vis, (x1 - r, y1 - r), (x1 + r, y1 + r), col, thickness)
-            cv2.line(vis, (x1 - r, y1 + r), (x1 + r, y1 - r), col, thickness)
-            cv2.line(vis, (x2 - r, y2 - r), (x2 + r, y2 + r), col, thickness)
-            cv2.line(vis, (x2 - r, y2 + r), (x2 + r, y2 - r), col, thickness)
-
-    cv2.imshow(win, vis)
-    return vis
-
-
 def filter_matches(kp1, kp2, matches, ratio=0.75):
     good_matches = [m[0] for m in matches if m[0].distance <= m[1].distance * ratio]
     # Match is good only if the closest match is much closer than the second closest match. 0.75 is arbitrary ratio.
@@ -83,8 +36,10 @@ if __name__ == '__main__':
 
     while True:
         cap.capture('im.jpg')
-        im = cv2.imread('im.jpg', cv2.CV_LOAD_IMAGE_GRAYSCALE)
+        img2 = cv2.imread('im.jpg', cv2.CV_LOAD_IMAGE_GRAYSCALE)
 
+        h1, w1 = img1.shape[:2]
+        h2, w2 = img2.shape[:2]
         kp2, desc2 = detector.detectAndCompute(img2, None)
         if desc2 is None:
             # print "No descriptors found"
@@ -95,12 +50,10 @@ if __name__ == '__main__':
         p1, p2, kp_pairs = filter_matches(kp1, kp2, raw_matches, 0.7)
         if len(p1) >= 4:
             H, status = cv2.findHomography(p1, p2, cv2.RANSAC, 5.0)
-            print '%d / %d  inliers/matched' % (np.sum(status), len(status))
+            print cv2.perspectiveTransform(np.float32([w1/2, h1/2]).reshape(1, -1, 2), H).reshape(-1, 2)-np.float32(w1/2, h1/2)
         else:
             H, status = None, None
             print '%d matches found, not enough for homography estimation' % len(p1)
-
-        vis = explore_match(winName, img1, img2, kp_pairs, status, H)
 
         if cv2.waitKey(1) & 0xFF == 27:  # Esc key ends loop
             break

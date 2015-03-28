@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c27e9c3a-c36c-488e-943f-9a4b2f3643a2" name="Default" comment="Changed some parameters in FLANN matcher.&#10;Added minor documentation of detector and matcher parameters.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SurfTrackerRaspi.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SurfTracker.py" afterPath="$PROJECT_DIR$/SurfTracker.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SurfTrackerRaspi.py" afterPath="$PROJECT_DIR$/SurfTrackerRaspi.py" />
     </list>
     <ignored path="featureTracker.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,7 +30,7 @@
         <entry file="file://$PROJECT_DIR$/SurfTracker.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1500">
-              <caret line="27" column="94" selection-start-line="27" selection-start-column="94" selection-end-line="27" selection-end-column="94" />
+              <caret line="12" column="66" selection-start-line="12" selection-start-column="66" selection-end-line="14" selection-end-column="27" />
               <folding>
                 <element signature="e#56#390#0" expanded="false" />
                 <element signature="e#2138#2540#0" expanded="false" />
@@ -44,8 +42,8 @@
       <file leaf-file-name="SurfTrackerRaspi.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SurfTrackerRaspi.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.516129" vertical-offset="1098" max-vertical-offset="1710">
-              <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+            <state vertical-scroll-proportion="-0.008064516" vertical-offset="528" max-vertical-offset="1005">
+              <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -353,7 +351,7 @@
     <entry file="file://$PROJECT_DIR$/SurfTracker.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1500">
-          <caret line="27" column="94" selection-start-line="27" selection-start-column="94" selection-end-line="27" selection-end-column="94" />
+          <caret line="12" column="66" selection-start-line="12" selection-start-column="66" selection-end-line="14" selection-end-column="27" />
           <folding>
             <element signature="e#56#390#0" expanded="false" />
             <element signature="e#2138#2540#0" expanded="false" />
@@ -363,8 +361,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SurfTrackerRaspi.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.516129" vertical-offset="1098" max-vertical-offset="1710">
-          <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+        <state vertical-scroll-proportion="-0.008064516" vertical-offset="528" max-vertical-offset="1005">
+          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
           <folding />
         </state>
       </provider>
