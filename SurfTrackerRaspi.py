@@ -25,18 +25,18 @@ if __name__ == '__main__':
     import picamera
     import numpy as np
 
-    winName = 'Detector'
     img1 = cv2.imread('sample.png', 0)
     detector, matcher = init_feature()
     kp1, desc1 = detector.detectAndCompute(img1, None)
 
     cap = picamera.PiCamera()
     cap.resolution = (640, 480)
-    cv2.namedWindow(winName)
 
     while True:
-        cap.capture('im.jpg')
-        img2 = cv2.imread('im.jpg', cv2.CV_LOAD_IMAGE_GRAYSCALE)
+        with picamera.array.PiRGBArray(cap) as stream:
+            cap.capture(stream, format='bgr')
+            # At this point the image is available as stream.array
+            img2 = stream.array
 
         h1, w1 = img1.shape[:2]
         h2, w2 = img2.shape[:2]
@@ -50,7 +50,7 @@ if __name__ == '__main__':
         p1, p2, kp_pairs = filter_matches(kp1, kp2, raw_matches, 0.7)
         if len(p1) >= 4:
             H, status = cv2.findHomography(p1, p2, cv2.RANSAC, 5.0)
-            print cv2.perspectiveTransform(np.float32([w1/2, h1/2]).reshape(1, -1, 2), H).reshape(-1, 2)-np.float32(w1/2, h1/2)
+            print cv2.perspectiveTransform(np.float32([w1/2, h1/2]).reshape(1, -1, 2), H).reshape(-1, 2)-np.float32([w1/2, h1/2])
         else:
             H, status = None, None
             print '%d matches found, not enough for homography estimation' % len(p1)
