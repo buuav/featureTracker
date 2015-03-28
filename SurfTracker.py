@@ -22,10 +22,12 @@ def explore_match(win, img1, img2, kp_pairs, status=None, H=None):
         cv2.imshow(win, vis)
         return vis
 
+
     if H is not None and len(status) > 10:
         corners = np.float32([[0, 0], [w1, 0], [w1, h1], [0, h1]])
         corners = np.int32(cv2.perspectiveTransform(corners.reshape(1, -1, 2), H).reshape(-1, 2) + (w1, 0))
         cv2.polylines(vis, [corners], True, (0, 0, 255), thickness=2)
+        print cv2.perspectiveTransform(np.float32([w1/2, h1/2]).reshape(1, -1, 2), H).reshape(-1, 2)-np.float32(w1/2)
 
     if status is None:
         status = np.ones(len(kp_pairs), np.bool_)
