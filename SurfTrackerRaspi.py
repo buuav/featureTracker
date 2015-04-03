@@ -19,16 +19,16 @@ def filter_matches(kp1, kp2, matches, ratio=0.75):
     # Match is good only if the closest match is much closer than the second closest match. 0.75 is arbitrary ratio.
 
     kp_pairs = [(kp1[m.queryIdx], kp2[m.trainIdx]) for m in good_matches]
-    p1 = np.float32([kp[0].pt for kp in kp_pairs])
-    p2 = np.float32([kp[1].pt for kp in kp_pairs])
+    p1 = numpy.float32([kp[0].pt for kp in kp_pairs])
+    p2 = numpy.float32([kp[1].pt for kp in kp_pairs])
     return p1, p2, kp_pairs
 
 
 if __name__ == '__main__':
     import cv2
     import picamera
-    import numpy as np
-
+    import numpy
+    
     img1 = cv2.imread('sample.png', 0)
     detector, descriptor, matcher = init_feature()
     kp1, desc1 = descriptor.compute(img1, detector.detect(img1))
@@ -54,7 +54,7 @@ if __name__ == '__main__':
             p1, p2, kp_pairs = filter_matches(kp1, kp2, raw_matches, 0.75)
             if len(p1) >= 8:
                 H, status = cv2.findHomography(p1, p2, cv2.RANSAC, 5.0)
-                print cv2.perspectiveTransform(np.float32([w1/2, h1/2]).reshape(1, -1, 2), H).reshape(-1, 2)-np.float32([w1/2, h1/2])
+                print cv2.perspectiveTransform(numpy.float32([w1/2, h1/2]).reshape(1, -1, 2), H).reshape(-1, 2)-numpy.float32([w1/2, h1/2])
             else:
                 H, status = None, None
                 print '%d matches found, not enough for homography estimation' % len(p1)
