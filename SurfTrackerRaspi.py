@@ -27,6 +27,7 @@ if __name__ == '__main__':
     
     img1 = cv2.imread('sample.png', 0)
 <<<<<<< HEAD
+<<<<<<< HEAD
     detector, descriptor, matcher = init_feature()
     kp1, desc1 = descriptor.compute(img1, detector.detect(img1))
 
@@ -59,6 +60,8 @@ if __name__ == '__main__':
             if cv2.waitKey(1) & 0xFF == 27:  # Esc key ends loop
                 break
 =======
+=======
+>>>>>>> parent of c052758... Big Changes
     detector, matcher = init_feature()
     kp1, desc1 = detector.detectAndCompute(img1, None)
 
@@ -92,5 +95,9 @@ if __name__ == '__main__':
             break
 
     cap.close()
+<<<<<<< HEAD
+    cv2.destroyAllWindows()
+>>>>>>> parent of c052758... Big Changes
+=======
     cv2.destroyAllWindows()
 >>>>>>> parent of c052758... Big Changes

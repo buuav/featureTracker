@@ -30,6 +30,7 @@
         <entry file="file://$PROJECT_DIR$/SurfTracker.py">
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <state vertical-scroll-proportion="0.0" vertical-offset="1537" max-vertical-offset="2145">
               <caret line="125" column="30" selection-start-line="125" selection-start-column="30" selection-end-line="125" selection-end-column="30" />
               <folding />
@@ -44,6 +45,8 @@
               <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
               <folding />
 =======
+=======
+>>>>>>> parent of c052758... Big Changes
             <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="1500">
               <caret line="12" column="66" selection-start-line="12" selection-start-column="66" selection-end-line="14" selection-end-column="27" />
               <folding>
@@ -59,8 +62,13 @@
         <entry file="file://$PROJECT_DIR$/SurfTrackerRaspi.py">
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <state vertical-scroll-proportion="0.3478261" vertical-offset="258" max-vertical-offset="1020">
               <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
+=======
+            <state vertical-scroll-proportion="0.31338027" vertical-offset="362" max-vertical-offset="1005">
+              <caret line="36" column="32" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
+>>>>>>> parent of c052758... Big Changes
 =======
             <state vertical-scroll-proportion="0.31338027" vertical-offset="362" max-vertical-offset="1005">
               <caret line="36" column="32" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
@@ -79,9 +87,12 @@
     <option name="CHANGED_PATHS">
       <list>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/chessboardTracker.py" />
         <option value="$PROJECT_DIR$/descriptorBenchmarking.py" />
         <option value="$PROJECT_DIR$/multiCoreTest.py" />
+=======
+>>>>>>> parent of c052758... Big Changes
 =======
 >>>>>>> parent of c052758... Big Changes
         <option value="$PROJECT_DIR$/SurfTracker.py" />
@@ -305,7 +316,11 @@
   </component>
   <component name="ToolWindowManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <frame x="48" y="22" width="1232" height="705" extended-state="0" />
+=======
+    <frame x="20" y="22" width="1260" height="665" extended-state="0" />
+>>>>>>> parent of c052758... Big Changes
 =======
     <frame x="20" y="22" width="1260" height="665" extended-state="0" />
 >>>>>>> parent of c052758... Big Changes
@@ -325,8 +340,12 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
 <<<<<<< HEAD
+<<<<<<< HEAD
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39779875" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+>>>>>>> parent of c052758... Big Changes
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3081761" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -339,6 +358,9 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32885906" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
+>>>>>>> parent of c052758... Big Changes
+=======
 >>>>>>> parent of c052758... Big Changes
     </layout>
   </component>
@@ -368,6 +390,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/SurfTracker.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2145">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -436,6 +459,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="278" max-vertical-offset="690">
           <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
 =======
+=======
+>>>>>>> parent of c052758... Big Changes
         <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="1500">
           <caret line="12" column="66" selection-start-line="12" selection-start-column="66" selection-end-line="14" selection-end-column="27" />
           <folding>
@@ -454,6 +479,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/multiCoreTest.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -480,10 +506,13 @@
     </entry>
 =======
 >>>>>>> parent of c052758... Big Changes
+=======
+>>>>>>> parent of c052758... Big Changes
     <entry file="file://$PROJECT_DIR$/SurfTracker.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="840">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+<<<<<<< HEAD
 <<<<<<< HEAD
           <folding />
         </state>
@@ -502,10 +531,15 @@
           <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
           <folding />
 =======
+=======
+>>>>>>> parent of c052758... Big Changes
           <folding>
             <element signature="e#56#390#0" expanded="false" />
             <element signature="e#2138#2540#0" expanded="false" />
           </folding>
+<<<<<<< HEAD
+>>>>>>> parent of c052758... Big Changes
+=======
 >>>>>>> parent of c052758... Big Changes
         </state>
       </provider>
@@ -514,6 +548,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="840">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+<<<<<<< HEAD
 <<<<<<< HEAD
           <folding />
         </state>
@@ -571,10 +606,15 @@
           <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
           <folding />
 =======
+=======
+>>>>>>> parent of c052758... Big Changes
           <folding>
             <element signature="e#56#390#0" expanded="false" />
             <element signature="e#2138#2540#0" expanded="false" />
           </folding>
+<<<<<<< HEAD
+>>>>>>> parent of c052758... Big Changes
+=======
 >>>>>>> parent of c052758... Big Changes
         </state>
       </provider>
@@ -584,17 +624,24 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1500">
           <caret line="12" column="66" selection-start-line="12" selection-start-column="66" selection-end-line="14" selection-end-column="27" />
 <<<<<<< HEAD
+<<<<<<< HEAD
           <folding />
 =======
+=======
+>>>>>>> parent of c052758... Big Changes
           <folding>
             <element signature="e#56#390#0" expanded="false" />
             <element signature="e#2138#2540#0" expanded="false" />
           </folding>
+<<<<<<< HEAD
+>>>>>>> parent of c052758... Big Changes
+=======
 >>>>>>> parent of c052758... Big Changes
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SurfTrackerRaspi.py">
+<<<<<<< HEAD
 <<<<<<< HEAD
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1005">
@@ -709,6 +756,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3478261" vertical-offset="258" max-vertical-offset="1020">
           <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
+=======
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31338027" vertical-offset="362" max-vertical-offset="1005">
+          <caret line="36" column="32" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
+>>>>>>> parent of c052758... Big Changes
           <folding />
         </state>
       </provider>
